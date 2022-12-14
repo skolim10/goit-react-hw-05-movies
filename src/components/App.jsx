@@ -1,16 +1,30 @@
+import { Routes, Route } from 'react-router-dom';
+import { Navbar } from './Navbar/Navbar.jsx';
+import { HomePage } from '../pages/HomePage/HomePage.jsx';
+// import MovieDetailsPage from '../pages/MovieDetailsPage';
+// import MoviesPage from '../pages/MoviesPage';
+// import NotFound from '../pages/NotFound';
+
 export const App = () => {
   return (
     <div
       style={{
         height: '100vh',
         display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
+        justifyContent: 'Left',
+        alignItems: 'Left',
+        // fontSize: 40,
+        color: 'black',
       }}
     >
-      React homework template
+      <Navbar />
+      <HomePage />
+      {/* <Routes>
+        <Route path="/" element={<Navbar />} />
+        <Route path="/homepage" element={<HomePage />} />
+        {/* <Route path="/products" element={<Products />} />
+        <Route path="*" element={<NotFound />} /> */}
+      {/* </Routes> */}
     </div>
   );
 };
