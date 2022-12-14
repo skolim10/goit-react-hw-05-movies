@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Navbar } from './Navbar/Navbar.jsx';
 import { HomePage } from '../pages/HomePage/HomePage.jsx';
 // import MovieDetailsPage from '../pages/MovieDetailsPage';
-// import MoviesPage from '../pages/MoviesPage';
+import { MoviesPage } from '../pages/MoviesPage/MoviesPage.jsx';
 // import NotFound from '../pages/NotFound';
 
 export const App = () => {
@@ -18,13 +18,12 @@ export const App = () => {
       }}
     >
       <Navbar />
-      <HomePage />
-      {/* <Routes>
-        <Route path="/" element={<Navbar />} />
-        <Route path="/homepage" element={<HomePage />} />
-        {/* <Route path="/products" element={<Products />} />
-        <Route path="*" element={<NotFound />} /> */}
-      {/* </Routes> */}
+      {/* <HomePage /> */}
+      <Routes>
+        {/* <Route path="/" element={<Navbar />} /> */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/movies" element={<MoviesPage />} />
+      </Routes>
     </div>
   );
 };

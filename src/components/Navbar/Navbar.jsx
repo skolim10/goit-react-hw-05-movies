@@ -12,17 +12,15 @@ const StyledLink = styled(NavLink)`
 
 export const Navbar = () => {
   return (
-    <div className="container.css">
-      <header>
-        <nav>
-          <StyledLink className={css.link} to="/" end>
-            Home
-          </StyledLink>
-          <StyledLink className={css.link} to="/movies">
-            Movies
-          </StyledLink>
-        </nav>
-      </header>
-    </div>
+    <header>
+      <nav>
+        <StyledLink className={css.link} to="/" end>
+          Home
+        </StyledLink>
+        <StyledLink className={css.link} to="/movies">
+          Movies
+        </StyledLink>
+      </nav>
+    </header>
   );
 };
