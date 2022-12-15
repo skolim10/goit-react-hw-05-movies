@@ -10,17 +10,16 @@ export const App = () => {
     <div
       style={{
         height: '100vh',
-        display: 'flex',
+        // display: 'flex',
         justifyContent: 'Left',
         alignItems: 'Left',
+        marginBottom: '20px',
         // fontSize: 40,
         color: 'black',
       }}
     >
       <Navbar />
-      {/* <HomePage /> */}
       <Routes>
-        {/* <Route path="/" element={<Navbar />} /> */}
         <Route path="/" element={<HomePage />} />
         <Route path="/movies" element={<MoviesPage />} />
       </Routes>
