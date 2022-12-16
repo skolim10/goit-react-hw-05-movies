@@ -1,13 +1,15 @@
+import { MoviesList } from 'components/MoviesList/MoviesList';
+import { useState, useEffect } from 'react';
+// import { useEffect } from 'react';
+import { getMoviesTrending } from 'utils/Api/Api';
+import { useTrendList } from '../utils/hooks/useTrendList';
+
 export const HomePage = () => {
+  const { trendMovies } = useTrendList();
+
   return (
     <div>
-      <ul>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
-        <li>Four</li>
-        <li>Five</li>
-      </ul>
+      <MoviesList movies={trendMovies} />
     </div>
   );
 };
