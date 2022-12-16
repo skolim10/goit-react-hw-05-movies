@@ -1,0 +1,25 @@
+.movieOverview {
+  display: flex;
+}
+
+.overviewLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.movieImg {
+  max-height: 400px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.movieDetails {
+  margin-left: 15px;
+  margin-top: 50px;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 10px;
+}

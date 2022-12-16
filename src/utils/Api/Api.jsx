@@ -24,3 +24,8 @@ export const getMoviesTrending = async () => {
     };
   });
 };
+
+export const getMovieDetails = async movieId => {
+  const response = await axios.get(`/movie/${movieId}${apiKey}&language=en-US`);
+  return response.data;
+};
