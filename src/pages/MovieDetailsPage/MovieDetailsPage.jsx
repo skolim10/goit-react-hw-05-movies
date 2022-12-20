@@ -18,7 +18,7 @@ const MovieDetailsPage = () => {
         </Link>
         <img
           src={`https://image.tmdb.org/t/p/w500/${movieDetails.poster_path}`}
-          alt="{movieDetails.original_title}"
+          alt={movieDetails.original_title}
           className={css.movieImg}
         />
       </div>
