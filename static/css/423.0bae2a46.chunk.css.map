@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/423.0bae2a46.chunk.css","mappings":"AAAA,8BACE,aAAc,CACd,eACF","sources":["pages/MoviesPage/MoviesPage.module.css"],"sourcesContent":[".searchFrom {\n  display: block;\n  margin-top: 20px;\n}\n"],"names":[],"sourceRoot":""}
