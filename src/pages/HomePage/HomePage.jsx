@@ -1,7 +1,7 @@
 import { MoviesList } from 'components/MoviesList/MoviesList';
 import { useTrendList } from 'utils/hooks/useTrendList';
 
-export const HomePage = () => {
+const HomePage = () => {
   const { trendMovies } = useTrendList();
 
   return (
@@ -12,4 +12,4 @@ export const HomePage = () => {
   );
 };
 
-// export default HomePage();
+export default HomePage;

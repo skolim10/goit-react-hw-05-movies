@@ -1,7 +1,7 @@
 import { Searchbar } from 'components/Searchbar/Searchbar';
 import css from './MoviesPage.module.css';
 
-export const MoviesPage = () => {
+const MoviesPage = () => {
   return (
     <div className={css.searchForm}>
       <Searchbar />
@@ -9,4 +9,4 @@ export const MoviesPage = () => {
   );
 };
 
-// export default MoviesPage();
+export default MoviesPage;

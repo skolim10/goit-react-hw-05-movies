@@ -2,7 +2,7 @@ import { useParams, useLocation, Link, Outlet } from 'react-router-dom';
 import { useMovieDetails } from 'utils/hooks/useMovieDetails';
 import css from './MovieDetailPage.module.css';
 
-export const MovieDetailsPage = () => {
+const MovieDetailsPage = () => {
   const { movieId } = useParams();
   const { movieDetails } = useMovieDetails(movieId);
 
@@ -60,3 +60,5 @@ export const MovieDetailsPage = () => {
     </div>
   );
 };
+
+export default MovieDetailsPage;
