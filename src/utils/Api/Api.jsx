@@ -29,3 +29,31 @@ export const getMovieDetails = async movieId => {
   const response = await axios.get(`/movie/${movieId}${apiKey}&language=en-US`);
   return response.data;
 };
+
+export const getMoviesReviews = async moviesId => {
+  const response = await axios.get(
+    `/movie/${moviesId}/reviews${apiKey}&language=en-US&page=1`
+  );
+  return response.data.results.map(({ author, content, id }) => {
+    return {
+      author,
+      content,
+      id,
+    };
+  });
+};
+
+export const getMovieCredits = async moviesId => {
+  const response = await axios.get(
+    `/movie/${moviesId}/credits${apiKey}&language=en-US`
+  );
+
+  return response.data.cast.map(({ name, character, profile_path, id }) => {
+    return {
+      name,
+      character,
+      profile_path,
+      id,
+    };
+  });
+};
