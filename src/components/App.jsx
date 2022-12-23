@@ -27,13 +27,14 @@ export const App = () => {
     <Routes>
       <Route path="/" element={<Navbar />}>
         <Route index path="/" element={<HomePage />} />
-        <Route path="/movies" element={<MoviesPage />} />
+        <Route path="/movies" element={<MoviesPage />}>
+          <Route path="*" element={<NotFound />} />
+        </Route>
         <Route path="/movies/:movieId" element={<MovieDetailsPage />}>
           <Route path="cast" element={<Cast />} />
           <Route path="reviews" element={<Reviews />} />
         </Route>
       </Route>
-      <Route path="*" element={<NotFound />} />
     </Routes>
     /* </div> */
   );
